@@ -33,7 +33,21 @@ Now to get external IP url:
 minikube service k8s-nodejs
 ```
 
-To test deployment:
+To test NodePort service:
+```
+curl $(minikube service k8s-nodejs --url)
+```
+
+Now delete NodePort service in order to create LoadBalancer service.
+```
+kubectl delete service k8s-nodejs
+```
+
+Creating LoadBalancer Service
+```
+kubectl expose deployment k8s-nodejs --type LoadBalancer --port 3000
+```
+To test LoadBalancer service:
 ```
 curl $(minikube service k8s-nodejs --url)
 ```
