@@ -57,3 +57,13 @@ After changing application code to version 2 rebuit docker images and push versi
 sudo docker build -t iumairkhan/k8s-nodejs:2.0.0 .
 sudo docker push iumairkhan/k8s-nodejs:2.0.0
 ```
+
+Now  update deployment image.
+```
+kubectl set image deployment k8s-nodejs k8s-nodejs=iumairkhan/k8s-nodejs:2.0.0
+```
+
+To roll out new deploymenmt:
+```
+kubectl rollout status deployment k8s-nodejs
+```
