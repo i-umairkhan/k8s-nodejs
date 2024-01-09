@@ -63,7 +63,13 @@ Now  update deployment image.
 kubectl set image deployment k8s-nodejs k8s-nodejs=iumairkhan/k8s-nodejs:2.0.0
 ```
 
-To roll out new deploymenmt:
+To check status of new deploymenmt:
 ```
+kubectl rollout status deployment k8s-nodejs
+```
+
+Now to rollback to old deploymeny.
+```
+kubectl set image deployment k8s-nodejs k8s-nodejs=iumairkhan/k8s-nodejs
 kubectl rollout status deployment k8s-nodejs
 ```
