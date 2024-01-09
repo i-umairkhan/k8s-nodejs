@@ -51,3 +51,9 @@ To test LoadBalancer service:
 ```
 curl $(minikube service k8s-nodejs --url)
 ```
+
+After changing application code to version 2 rebuit docker images and push version 2 to docker hub.
+```
+sudo docker build -t iumairkhan/k8s-nodejs:2.0.0 .
+sudo docker push iumairkhan/k8s-nodejs:2.0.0
+```
