@@ -73,3 +73,7 @@ Now to rollback to old deploymeny.
 kubectl set image deployment k8s-nodejs k8s-nodejs=iumairkhan/k8s-nodejs
 kubectl rollout status deployment k8s-nodejs
 ```
+To get k8s dashboard on minikube node.
+```
+minikube dashboard
+```
