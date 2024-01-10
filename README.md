@@ -77,3 +77,11 @@ To get k8s dashboard on minikube node.
 ```
 minikube dashboard
 ```
+Now delete all services in default namespace to use declarative YAML configuration approch.
+```
+kubectl delete all --all
+```
+Now creating deployment.yaml to spacify deployment configuration and apply that.
+```
+kubectl apply -f deploymenmt.yaml
+```
