@@ -85,3 +85,7 @@ Now creating deployment.yaml to spacify deployment configuration and apply that.
 ```
 kubectl apply -f deploymenmt.yaml
 ```
+Now creating service.yaml to spacify service configuration and apply that.
+```
+kubectl apply -f service.yaml
+```
