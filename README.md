@@ -90,3 +90,8 @@ Now creating service.yaml to spacify service configuration and apply that.
 kubectl apply -f service.yaml
 ```
 Now nginx service code is added to create a second deployment.
+Building and pushing nginx image to docker hub.
+```
+sudo docker build -t iumairkhan/k8s-nginx .
+sudo docker push iumairkhan/k8s-nginx
+```
