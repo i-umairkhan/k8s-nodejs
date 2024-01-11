@@ -89,3 +89,4 @@ Now creating service.yaml to spacify service configuration and apply that.
 ```
 kubectl apply -f service.yaml
 ```
+Now nginx service code is added to create a second deployment.
